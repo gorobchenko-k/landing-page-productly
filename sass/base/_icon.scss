@@ -1,0 +1,84 @@
+.icon {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.icon-square {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 19px;
+
+    &-violet {
+        background-color: $color-violet;
+    }
+
+    &-yellow {
+        background-color: $color-yellow;
+    }
+
+    &-red {
+        background-color: $color-red;
+    }
+
+    &-blue {
+        background-color: $color-blue;
+    }
+}
+
+.icon-round {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+
+    &-white {
+        background-color: $color-light;
+    }
+}
+
+.icon_play {
+    background-image: url("../img/icon/play.svg");
+    width: 18px;
+    height: 19px;
+}
+
+.icon__arrow {
+    background-image: url("../img/icon/arrow.svg");
+    width: 12px;
+    height: 17px;
+}
+
+.icon__snake {
+    background-image: url("../img/icon/snake.svg");
+    width: 18px;
+    height: 14px;
+}
+
+.icon__heart {
+    background-image: url("../img/icon/heart.svg");
+    width: 17px;
+    height: 15px;
+}
+
+.icon__clock {
+    background-image: url("../img/icon/clock.svg");
+    width: 15px;
+    height: 17px;
+}
+
+.icon__phone {
+    background-image: url("../img/icon/phone.svg");
+    width: 13px;
+    height: 13px;
+}
+
+.icon__letter {
+    background-image: url("../img/icon/letter.svg");
+    width: 11px;
+    height: 8px;
+}
