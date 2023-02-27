@@ -1,16 +1,27 @@
 .contact-us {
     background-color: $color-background;
-    padding: 62px 82px;
+    padding: 62px 0;
+    @include media-table {
+        text-align: center;
+    }
 }
 
 .contact-us__title {
     margin: 0 0 17px;
 }
 
-// .contact-us-wrapper {}
+.contact-us-wrapper {
+    @include media-table {
+        flex-direction: column;
+    }
+}
 
 .contact-us__content {
     max-width: 520px;
+    @include media-table {
+        max-width: 100%;
+        margin-bottom: 52px;
+    }
 }
 
 .contact-us__text {
@@ -23,6 +34,13 @@
     display: flex;
     align-items: center;
     @include font(2.5rem, 2.6rem, 400);
+    @include media-table {
+        justify-content: center;
+    }
+
+    @include media-mobilesmall {
+        @include font(2.0rem, 2.6rem, 400);
+    }
 
     a {
         margin-left: 11px;
@@ -63,10 +81,22 @@
 
 .contact-us__line {
     margin-bottom: 19px;
+
+    @include media-mobile {
+        flex-direction: column;
+        margin-bottom: 0;
+        >* {
+            margin-bottom: 19px;
+        }
+    }
 }
 
 .contact-us__buttons {
     >* {
         min-width: 117px;
+    }
+
+    @include media-mobile {
+        margin-top: 24px;
     }
 }

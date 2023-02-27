@@ -1,9 +1,13 @@
 .tools__container {
-    padding-bottom: 90px;
+    padding: 110px 0 90px 0;
     background-image: url("../img/backgrounds/tools-bg.png");
     background-position: center bottom;
     background-size: 100%;
     background-repeat: no-repeat;
+
+    @include media-table {
+        padding: 50px 0 63px 0;
+    }
 }
 
 .tools__title {
@@ -16,10 +20,36 @@
 .tools__button {
     margin-top: 60px;
     text-align: center;
+
+    @include media-mobile {
+        margin-top: 0;
+    }
 }
 
 
 //Tool Block
+
+.tool-wrapper {
+    @include media-table {
+        flex-wrap: wrap;
+
+        >.tool {
+            flex-basis: 43%;
+        }
+    }
+
+    @include media-mobile {
+        >.tool {
+            flex-basis: 100%;
+            margin-bottom: 47px;
+        }
+    }
+}
+
+.tool {
+    text-align: center;
+}
+
 .tool__icon {
     margin-bottom: 30px;
 }
